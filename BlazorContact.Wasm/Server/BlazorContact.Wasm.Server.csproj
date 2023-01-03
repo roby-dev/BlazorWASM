@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="6.0.9" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BlazorContact.Wasm.Repository\BlazorContact.Wasm.Repository.csproj" />
+    <ProjectReference Include="..\Client\BlazorContact.Wasm.Client.csproj" />
+    <ProjectReference Include="..\Shared\BlazorContact.Wasm.Shared.csproj" />
+  </ItemGroup>
+
+
+</Project>

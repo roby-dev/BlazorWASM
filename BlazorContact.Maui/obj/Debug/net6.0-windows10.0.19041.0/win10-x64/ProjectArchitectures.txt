@@ -1,0 +1,1 @@
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Maui\BlazorContact.Maui.csproj;x64

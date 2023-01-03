@@ -1,0 +1,81 @@
+﻿@page "/contactdetails"
+@page "/contactdetails/{id:int}"
+
+@inject IContactService contactService
+@inject NavigationManager navigationService;
+
+@if(contact == null){
+    <p><em>Loading...</em></p>
+}else{
+    <EditForm Model="contact" OnValidSubmit="save">
+        <div class="card">
+            <div class="card-header">Contact Details</div>
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="">First Name</label>
+                            <InputText class="form-control" @bind-Value="@contact.FirstName"></InputText>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="">Last Name</label>
+                            <InputText class="form-control" @bind-Value="@contact.LastName"></InputText>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <label for="">Phone</label>
+                            <InputText class="form-control" @bind-Value="@contact.Phone"></InputText>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <label for="">Addres</label>
+                            <InputTextArea class="form-control" @bind-Value="@contact.Address"></InputTextArea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+
+
+                        </div>
+                        <div class="col-md-4 mb-3">
+                           <input type="submit" class="btn btn-success" value="Save" />
+                           <input type="button" class="btn btn-secondary" value="Cancel" @onclick="navigateToHome" />
+                        </div>
+                        <div class="col-md-4 mb-3">
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+    public Contact contact;
+
+    protected async override Task OnInitializedAsync() {
+        if (id == 0)
+            contact = new Contact();
+        else
+            contact = await contactService.GetDetails(id);
+    }
+
+    protected async Task save() {
+        await contactService.SaveContact(contact);
+        navigateToHome();
+    }
+
+    protected void navigateToHome() {
+        navigationService.NavigateTo("/");
+    }
+}

@@ -1,0 +1,139 @@
+﻿@page "/contactdetails"
+@page "/contactdetails/{id}"
+
+@inject IContactService contactService
+@inject SweetAlertService swal
+@inject NavigationManager navigationService;
+
+
+@if (userSelected == null) {
+        <p><em>Loading...</em></p>
+} else {
+        <EditForm Model="userSelected" OnValidSubmit="save">
+            <div class="card">
+                <div class="card-header">Detalle usuario</div>
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label for="">DNI</label>
+                            @if (string.IsNullOrEmpty(userSelected._id)) {
+                                <InputText class="form-control" @bind-Value="@userSelected.DNI" maxlength="8" ></InputText>
+                            } else {
+                                <InputText class="form-control" @bind-Value="@userSelected.DNI" maxlength="8"  disabled></InputText>
+                            }
+                        </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="">First Name</label>
+                            @if (string.IsNullOrEmpty(userSelected._id)) {
+                                <InputText class="form-control" @bind-Value="@userSelected.name"  ></InputText>
+                            } else {
+                                <InputText class="form-control" @bind-Value="@userSelected.name" disabled></InputText>
+                            }
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">Last Name</label>
+                            @if (string.IsNullOrEmpty(userSelected._id)) {
+                                <InputText class="form-control" @bind-Value="@userSelected.lastname" ></InputText>
+                            } else {
+                                <InputText class="form-control" @bind-Value="@userSelected.lastname" disabled></InputText>
+                            }
+                            </div>
+                        </div>       
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="">Correo Electrónico</label>
+                                <InputText type="email" class="form-control" @bind-Value="@userSelected.email"></InputText>
+                            </div>                            
+                        </div>           
+                        
+                           
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label for="">Celular</label>
+                                <InputText class="form-control" @bind-Value="@userSelected.phone"></InputText>
+                            </div>
+                        </div>
+                        <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="">Estado</label>
+                                            <InputText  class="form-control" @bind-Value="@userSelected.statusAccount" disabled></InputText>
+                                    </div>                            
+                                </div> 
+
+                                     <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="">Rol</label>
+                                            <InputText class="form-control" @bind-Value="@userSelected.role" disabled></InputText>
+                                    </div>                            
+                                </div> 
+
+
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+
+
+                            </div>
+                            <div class="col-md-4 mb-3">
+                               <input type="submit" class="btn btn-success" value="Guardar" />
+                               <input type="button" class="btn btn-secondary" value="Cancelar" @onclick="navigateToHome" />
+                            </div>
+                            <div class="col-md-4 mb-3">
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </EditForm>
+}
+
+@code {
+    [Parameter]
+    public string id { get; set; }
+    public User userSelected;
+
+    protected async override Task OnInitializedAsync() {
+        if (String.IsNullOrEmpty(id)) {
+            userSelected = new User();
+            userSelected.statusAccount = "DISPONIBLE";
+            userSelected.role = "CIUDADANO";
+        }
+        
+        else {
+            var response = await contactService.GetDetails(id);
+            if (!response.ok) {
+                navigateToHome();
+                return;
+            }
+
+            userSelected = response.user;
+            userSelected.statusAccount = "DISPONIBLE";
+            userSelected.role = "CIUDADANO";
+        }   
+    }
+
+    protected async Task save() {
+        userSelected.password = "123456";
+        userSelected.statusAccount = "DISPONIBLE";
+        userSelected.role = "CIUDADANO";
+        var response = await contactService.saveUser(userSelected);
+
+        if(response.ok) {
+            await swal.FireAsync("Correcto", response.msg, "success");
+            navigateToHome();
+        }else{
+            swal.FireAsync("Error", response.msg, "error");
+        }
+    }
+
+    protected void navigateToHome() {
+        navigationService.NavigateTo("/");
+    }
+}

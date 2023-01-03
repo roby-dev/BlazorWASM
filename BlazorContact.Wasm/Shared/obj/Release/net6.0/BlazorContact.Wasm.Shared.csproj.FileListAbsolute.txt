@@ -1,0 +1,12 @@
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\bin\Release\net6.0\BlazorContact.Wasm.Shared.deps.json
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\bin\Release\net6.0\BlazorContact.Wasm.Shared.dll
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\bin\Release\net6.0\BlazorContact.Wasm.Shared.pdb
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\obj\Release\net6.0\BlazorContact.Wasm.Shared.csproj.AssemblyReference.cache
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\obj\Release\net6.0\BlazorContact.Wasm.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\obj\Release\net6.0\BlazorContact.Wasm.Shared.AssemblyInfoInputs.cache
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\obj\Release\net6.0\BlazorContact.Wasm.Shared.AssemblyInfo.cs
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\obj\Release\net6.0\BlazorContact.Wasm.Shared.csproj.CoreCompileInputs.cache
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\obj\Release\net6.0\BlazorContact.Wasm.Shared.dll
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\obj\Release\net6.0\refint\BlazorContact.Wasm.Shared.dll
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\obj\Release\net6.0\BlazorContact.Wasm.Shared.pdb
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\obj\Release\net6.0\ref\BlazorContact.Wasm.Shared.dll

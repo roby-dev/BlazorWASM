@@ -1,0 +1,74 @@
+﻿@page "/"
+
+@inject IContactService contactService
+@inject IAuthService authService
+@inject NavigationManager navigationService
+
+<h3>Lista de usuarios</h3>
+<a class="btn btn-success" href="/contactdetails">Agregar personal</a>
+
+@message
+
+
+@if (users == null) {
+        <p><em>Cargando...</em></p>
+} else {
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>DNI</th>
+                    <th>Rol</th>
+                   @* <th></th>
+                    <th></th>*@
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var user in users) {
+                <tr @onclick="() => goToDetails(user._id)">
+                    <td>@user.fullName</td>
+                    <td>@user.DNI</td>
+                    <td>@user.getRole</td>
+                    @*  <td><a class="btn btn-success" href="/contactdetails/@contact.Id">Edit</a></td>
+                            <td><a class="btn btn-danger" @onclick="() => Delete(contact.Id)">Delete</a></td>*@
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+}
+
+@code {
+    IEnumerable<User> users;
+    private string message;
+    User authenticatedUser;
+
+    protected async override Task OnInitializedAsync() {
+        authenticatedUser = await authService.isLogged();
+        if (authenticatedUser == null) {
+            navigationService.NavigateTo("/login");
+            return;
+        }
+
+        authService.setUser(authenticatedUser);
+
+        try {
+            var response = await contactService.GetAll();
+            users = response.users.OrderBy(x => x.fullName);
+        } catch (Exception e) {
+            message = e.Message;
+        }
+    }
+
+    protected void goToDetails(string _id) {
+        navigationService.NavigateTo($"/contactdetails/{_id}");
+    }
+
+    protected async void Delete(int id) {
+        await contactService.DeleteContact(id);
+        var response = await contactService.GetAll();
+        users = response.users.OrderBy(x=>x.fullName);
+        InvokeAsync(StateHasChanged);
+    }
+}

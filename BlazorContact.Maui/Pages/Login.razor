@@ -1,0 +1,49 @@
+﻿@layout LoginLayout
+@page "/login"
+
+@inject IAuthService authService
+@inject NavigationManager navigationService
+@inject SweetAlertService swal;
+
+<EditForm Model="auth" OnValidSubmit="login">
+     <div class="card">
+        <div class="card-header">Acceder al Sistema</div>
+        <div class="card-body">
+            <div class="container">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <InputText type="email" class="form-control" @bind-Value="@auth.email" aria-describedby="emailHelp"/>
+                    <div id="emailHelp" class="form-text">No compartiremos tu email con nadie mas.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <InputText type="password" class="form-control" @bind-Value="@auth.password"/>
+                </div>
+                <button type="submit" class="btn btn-primary">Acceder</button>
+            </div>
+        </div>
+     </div>
+
+</EditForm>
+
+@code {
+    Auth auth;
+
+    protected async override Task OnInitializedAsync() {
+        auth = new Auth();
+    }
+
+    private async void login() {
+        swal.ShowLoadingAsync();
+        var response = await authService.login(auth);
+        if (response.ok) {
+            Preferences.Clear();
+            Preferences.Set("token", response.token);
+            authService.setUser(response.user);
+            swal.CloseAsync();
+            navigationService.NavigateTo("/");
+        } else {
+            swal.FireAsync("Error","Credenciales incorrectas","error");
+        }
+    }
+}

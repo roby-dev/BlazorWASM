@@ -1,0 +1,3 @@
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Maui\bin\Release\net6.0-android\publish\com.companyname.blazorcontact.maui-Signed.aab
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Maui\bin\Release\net6.0-android\publish\com.companyname.blazorcontact.maui.aab
+D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Maui\bin\Release\net6.0-android\publish\com.companyname.blazorcontact.maui-Signed.apk
