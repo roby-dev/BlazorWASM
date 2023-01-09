@@ -10,3 +10,15 @@ D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\obj\Debug\net6.0\Blazo
 D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\obj\Debug\net6.0\refint\BlazorContact.Wasm.Shared.dll
 D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\obj\Debug\net6.0\BlazorContact.Wasm.Shared.pdb
 D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm\Shared\obj\Debug\net6.0\ref\BlazorContact.Wasm.Shared.dll
+C:\MAUI\BlazorWASM\BlazorContact.Wasm\Shared\bin\Debug\net6.0\BlazorContact.Wasm.Shared.deps.json
+C:\MAUI\BlazorWASM\BlazorContact.Wasm\Shared\bin\Debug\net6.0\BlazorContact.Wasm.Shared.dll
+C:\MAUI\BlazorWASM\BlazorContact.Wasm\Shared\bin\Debug\net6.0\BlazorContact.Wasm.Shared.pdb
+C:\MAUI\BlazorWASM\BlazorContact.Wasm\Shared\obj\Debug\net6.0\BlazorContact.Wasm.Shared.csproj.AssemblyReference.cache
+C:\MAUI\BlazorWASM\BlazorContact.Wasm\Shared\obj\Debug\net6.0\BlazorContact.Wasm.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\MAUI\BlazorWASM\BlazorContact.Wasm\Shared\obj\Debug\net6.0\BlazorContact.Wasm.Shared.AssemblyInfoInputs.cache
+C:\MAUI\BlazorWASM\BlazorContact.Wasm\Shared\obj\Debug\net6.0\BlazorContact.Wasm.Shared.AssemblyInfo.cs
+C:\MAUI\BlazorWASM\BlazorContact.Wasm\Shared\obj\Debug\net6.0\BlazorContact.Wasm.Shared.csproj.CoreCompileInputs.cache
+C:\MAUI\BlazorWASM\BlazorContact.Wasm\Shared\obj\Debug\net6.0\BlazorContact.Wasm.Shared.dll
+C:\MAUI\BlazorWASM\BlazorContact.Wasm\Shared\obj\Debug\net6.0\refint\BlazorContact.Wasm.Shared.dll
+C:\MAUI\BlazorWASM\BlazorContact.Wasm\Shared\obj\Debug\net6.0\BlazorContact.Wasm.Shared.pdb
+C:\MAUI\BlazorWASM\BlazorContact.Wasm\Shared\obj\Debug\net6.0\ref\BlazorContact.Wasm.Shared.dll

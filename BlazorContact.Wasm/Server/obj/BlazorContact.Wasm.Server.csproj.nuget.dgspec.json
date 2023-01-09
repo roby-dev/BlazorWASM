@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Server\\BlazorContact.Wasm.Server.csproj": {}
+    "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Server\\BlazorContact.Wasm.Server.csproj": {}
   },
   "projects": {
-    "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm.Repository\\BlazorContact.Wasm.Repository.csproj": {
+    "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm.Repository\\BlazorContact.Wasm.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm.Repository\\BlazorContact.Wasm.Repository.csproj",
+        "projectUniqueName": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm.Repository\\BlazorContact.Wasm.Repository.csproj",
         "projectName": "BlazorContact.Wasm.Repository",
-        "projectPath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm.Repository\\BlazorContact.Wasm.Repository.csproj",
+        "projectPath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm.Repository\\BlazorContact.Wasm.Repository.csproj",
         "packagesPath": "C:\\Users\\Roby\\.nuget\\packages\\",
-        "outputPath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm.Repository\\obj\\",
+        "outputPath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -34,8 +34,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj": {
-                "projectPath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj"
+              "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj": {
+                "projectPath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj"
               }
             }
           }
@@ -71,18 +71,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Client\\BlazorContact.Wasm.Client.csproj": {
+    "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Client\\BlazorContact.Wasm.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Client\\BlazorContact.Wasm.Client.csproj",
+        "projectUniqueName": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Client\\BlazorContact.Wasm.Client.csproj",
         "projectName": "BlazorContact.Wasm.Client",
-        "projectPath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Client\\BlazorContact.Wasm.Client.csproj",
+        "projectPath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Client\\BlazorContact.Wasm.Client.csproj",
         "packagesPath": "C:\\Users\\Roby\\.nuget\\packages\\",
-        "outputPath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Client\\obj\\",
+        "outputPath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -105,8 +105,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj": {
-                "projectPath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj"
+              "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj": {
+                "projectPath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj"
               }
             }
           }
@@ -142,18 +142,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[6.0.12, 6.0.12]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -162,14 +156,14 @@
         }
       }
     },
-    "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Server\\BlazorContact.Wasm.Server.csproj": {
+    "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Server\\BlazorContact.Wasm.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Server\\BlazorContact.Wasm.Server.csproj",
+        "projectUniqueName": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Server\\BlazorContact.Wasm.Server.csproj",
         "projectName": "BlazorContact.Wasm.Server",
-        "projectPath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Server\\BlazorContact.Wasm.Server.csproj",
+        "projectPath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Server\\BlazorContact.Wasm.Server.csproj",
         "packagesPath": "C:\\Users\\Roby\\.nuget\\packages\\",
-        "outputPath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Server\\obj\\",
+        "outputPath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -192,14 +186,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm.Repository\\BlazorContact.Wasm.Repository.csproj": {
-                "projectPath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm.Repository\\BlazorContact.Wasm.Repository.csproj"
+              "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm.Repository\\BlazorContact.Wasm.Repository.csproj": {
+                "projectPath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm.Repository\\BlazorContact.Wasm.Repository.csproj"
               },
-              "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Client\\BlazorContact.Wasm.Client.csproj": {
-                "projectPath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Client\\BlazorContact.Wasm.Client.csproj"
+              "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Client\\BlazorContact.Wasm.Client.csproj": {
+                "projectPath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Client\\BlazorContact.Wasm.Client.csproj"
               },
-              "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj": {
-                "projectPath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj"
+              "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj": {
+                "projectPath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj"
               }
             }
           }
@@ -242,18 +236,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj": {
+    "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj",
+        "projectUniqueName": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj",
         "projectName": "BlazorContact.Wasm.Shared",
-        "projectPath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj",
+        "projectPath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Shared\\BlazorContact.Wasm.Shared.csproj",
         "packagesPath": "C:\\Users\\Roby\\.nuget\\packages\\",
-        "outputPath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Shared\\obj\\",
+        "outputPath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -303,7 +297,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

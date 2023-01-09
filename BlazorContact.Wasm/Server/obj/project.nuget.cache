@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vQlth0xwSoyM3kcaSJUko1aEBcYJR7KHQ5pBKennX0HQRCbN05jMjwGXITswHh/vUgOchLV7wqMsDBpD8V8xZQ==",
+  "dgSpecHash": "ulq39pOGMDEYnllrv/lzrurVyHP9ks7+SMRXKOwJLDLiwzUHZcPIlM3qRAEto2hUnyOHsl8xUvF1pEPUau9EOA==",
   "success": true,
-  "projectFilePath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Server\\BlazorContact.Wasm.Server.csproj",
+  "projectFilePath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Server\\BlazorContact.Wasm.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Roby\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Roby\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.9\\microsoft.aspnetcore.authorization.6.0.9.nupkg.sha512",

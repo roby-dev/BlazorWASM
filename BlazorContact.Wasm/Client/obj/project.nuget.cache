@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ak9pWTdaRwI7GQqyi2fwhiNmAavXtPmNLoBVAeBeOdqi3Nn0T2eWkC2aZ7raW4o1/lyrPaBQjNuLxTq+MoF0Fg==",
+  "dgSpecHash": "KtAPkiMXYMfn5g7CSf74VI8oPzmhFLKBRHkLP85lqjnDT4OAysg4WcZVtl5QLuVG2QOpZ+YeKV5EoKUdkewxew==",
   "success": true,
-  "projectFilePath": "D:\\Cursos C#\\BlazorContact.Wasm\\BlazorContact.Wasm\\Client\\BlazorContact.Wasm.Client.csproj",
+  "projectFilePath": "C:\\MAUI\\BlazorWASM\\BlazorContact.Wasm\\Client\\BlazorContact.Wasm.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Roby\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.9\\microsoft.aspnetcore.authorization.6.0.9.nupkg.sha512",
     "C:\\Users\\Roby\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.9\\microsoft.aspnetcore.components.6.0.9.nupkg.sha512",
@@ -32,8 +32,7 @@
     "C:\\Users\\Roby\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\Roby\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Roby\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\Roby\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\Roby\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.12\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.12.nupkg.sha512"
+    "C:\\Users\\Roby\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

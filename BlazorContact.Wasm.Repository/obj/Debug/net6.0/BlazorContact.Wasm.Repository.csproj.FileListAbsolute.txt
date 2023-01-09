@@ -13,3 +13,18 @@ D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm.Repository\obj\Debug\net6.0\B
 D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm.Repository\obj\Debug\net6.0\refint\BlazorContact.Wasm.Repository.dll
 D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm.Repository\obj\Debug\net6.0\BlazorContact.Wasm.Repository.pdb
 D:\Cursos C#\BlazorContact.Wasm\BlazorContact.Wasm.Repository\obj\Debug\net6.0\ref\BlazorContact.Wasm.Repository.dll
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\bin\Debug\net6.0\BlazorContact.Wasm.Repository.deps.json
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\bin\Debug\net6.0\BlazorContact.Wasm.Repository.dll
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\bin\Debug\net6.0\BlazorContact.Wasm.Repository.pdb
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\bin\Debug\net6.0\BlazorContact.Wasm.Shared.dll
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\bin\Debug\net6.0\BlazorContact.Wasm.Shared.pdb
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\obj\Debug\net6.0\BlazorContact.Wasm.Repository.csproj.AssemblyReference.cache
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\obj\Debug\net6.0\BlazorContact.Wasm.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\obj\Debug\net6.0\BlazorContact.Wasm.Repository.AssemblyInfoInputs.cache
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\obj\Debug\net6.0\BlazorContact.Wasm.Repository.AssemblyInfo.cs
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\obj\Debug\net6.0\BlazorContact.Wasm.Repository.csproj.CoreCompileInputs.cache
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\obj\Debug\net6.0\BlazorContact.Wasm.Repository.csproj.CopyComplete
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\obj\Debug\net6.0\BlazorContact.Wasm.Repository.dll
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\obj\Debug\net6.0\refint\BlazorContact.Wasm.Repository.dll
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\obj\Debug\net6.0\BlazorContact.Wasm.Repository.pdb
+C:\MAUI\BlazorWASM\BlazorContact.Wasm.Repository\obj\Debug\net6.0\ref\BlazorContact.Wasm.Repository.dll

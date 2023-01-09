@@ -18,11 +18,12 @@ namespace BlazorContact.Maui {
             builder.Services.AddMauiBlazorWebView();
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
-#endif
+#endif            
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(backendURL) });
             builder.Services.AddScoped<IContactService, ContactService>();
             builder.Services.AddSingleton<IAuthService, AuthService>();
 			builder.Services.AddSweetAlert2();
+            builder.Services.AddTelerikBlazor();
 			return builder.Build();
         }
     }

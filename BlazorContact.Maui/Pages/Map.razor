@@ -1,0 +1,133 @@
+﻿@page "/map"
+
+<h3>Mapa</h3>
+<button class="btn btn-primary" @onclick="ObtenerUbicacion">Obtener ubicación actual</button>
+<TelerikButton OnClick="@( () => ChangeZoom() )">Change Size!</TelerikButton>
+
+<TelerikRootComponent>
+
+
+    <TelerikMap @ref="MapRef" Zoom="@Zoom" Center="Center" MinZoom="MinZoom" OnClick="@OnMapClick">
+        <MapLayers>
+            <MapLayer Type="@MapLayersType.Tile"
+                      Attribution="@Attribution"
+                      Subdomains="@Subdomains"
+                      UrlTemplate="@UrlTemplate">
+            </MapLayer>
+
+            <MapLayer Type="@MapLayersType.Marker"
+                      Data="@MarkerData"
+                      LocationField="@nameof(Marker.LatLng)"
+                      TitleField="@nameof(Marker.Address)">
+                <MapLayerMarkerSettings>
+                    <MapLayerMarkerSettingsTooltip>
+                        <Template>
+                            @{
+                                var dataItem = context.DataItem as Marker;
+                            }
+
+                            <div>@dataItem.Address</div>
+                        </Template>
+                    </MapLayerMarkerSettingsTooltip>
+                </MapLayerMarkerSettings>
+            </MapLayer>
+
+            <MapLayer Type="@MapLayersType.Bubble"
+                      Data="@BubbleData"
+                      LocationField="@nameof(Bubble.LatLng)"
+                      ValueField="@nameof(Bubble.Revenue)">
+                <MapLayerBubbleSettings>
+                    <MapLayerBubbleSettingsStyle>
+                        <MapLayerBubbleSettingsStyleFill Color="#0000ff"></MapLayerBubbleSettingsStyleFill>
+                        <MapLayerBubbleSettingsStyleStroke Color="#000000"></MapLayerBubbleSettingsStyleStroke>
+                    </MapLayerBubbleSettingsStyle>
+                </MapLayerBubbleSettings>
+            </MapLayer>
+        </MapLayers>
+    </TelerikMap>
+ 
+</TelerikRootComponent>
+
+@code {
+    public string[] Subdomains { get; set; } = new string[] { "a", "b", "c" };
+    public string UrlTemplate { get; set; } = "https://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png";
+    public string Attribution { get; set; } = "&copy; <a href='https://osm.org/copyright'>OpenStreetMap contributors</a>";
+    public double[] Center { get; set; } = new double[] { -18.080180, -70.296404 };
+
+    TelerikMap MapRef { get; set; }
+    public double Zoom { get; set; } = 4;
+    public double MinZoom { get; set; } = 19;
+
+    public List<Marker> MarkerData { get; set; } = new List<Marker>();
+    public List<Bubble> BubbleData { get; set; } = new List<Bubble>();
+
+    public void ChangeZoom() {
+        Zoom = 1;
+        MapRef.Refresh();
+    }    
+
+    private CancellationTokenSource _cancelTokenSource;
+    private bool _isCheckingLocation;
+
+    private async Task ObtenerUbicacion() {
+        try {
+            _isCheckingLocation = true;
+
+            GeolocationRequest request = new GeolocationRequest(GeolocationAccuracy.Medium, TimeSpan.FromSeconds(10));
+
+            _cancelTokenSource = new CancellationTokenSource();
+
+            Location location = await Geolocation.Default.GetLocationAsync(request, _cancelTokenSource.Token);
+
+            if (location != null) {
+                var latitude = location.Latitude;
+                var longitude = location.Longitude;
+                Center = new double[] { latitude, longitude };
+                Zoom = 19;
+                MarkerData.Add(new Marker() {
+                        LatLng = new double[] { latitude, longitude },
+                        Address = "Soporte Remoto SAC",
+                });
+                BubbleData.Add(new Bubble()
+                    {
+                        LatLng = new double[] { latitude, longitude },
+                        Revenue = 1000
+                    });
+                Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
+                MapRef.Refresh();
+            }
+        }  
+        catch (Exception ex) {
+        } finally {
+            _isCheckingLocation = false;
+        }
+    }
+
+    public void CancelRequest() {
+        if (_isCheckingLocation && _cancelTokenSource != null && _cancelTokenSource.IsCancellationRequested == false)
+            _cancelTokenSource.Cancel();
+    }
+
+    public void OnMapClick(MapClickEventArgs args)
+    {
+        var location = args.Location;
+        var eventArgs = args.EventArgs as MouseEventArgs;
+
+        var latitude = location.Latitude;
+        var longitude = location.Longitude;
+        Center = new double[] { latitude, longitude };
+        Zoom = 19;
+        MarkerData.Add(new Marker()
+            {
+                LatLng = new double[] { latitude, longitude },
+                Address = "Soporte Remoto SAC",
+            });
+        BubbleData.Add(new Bubble()
+            {
+                LatLng = new double[] { latitude, longitude },
+                Revenue = 1000
+            });
+        MapRef.Refresh();  
+       
+    }
+}

@@ -13,7 +13,7 @@
         <EnableDefaultCssItems>false</EnableDefaultCssItems>
 
         <!-- Display name -->
-        <ApplicationTitle>BlazorContact.Maui</ApplicationTitle>
+        <ApplicationTitle>BlazorContact.Maui.IOS</ApplicationTitle>
 
         <!-- App Identifier -->
         <ApplicationId>com.companyname.blazorcontact.maui</ApplicationId>
@@ -59,6 +59,7 @@
 
     <ItemGroup>
       <PackageReference Include="CurrieTechnologies.Razor.SweetAlert2" Version="5.4.0" />
+      <PackageReference Include="Telerik.UI.for.Blazor" Version="3.6.0" />
     </ItemGroup>
 
     <ItemGroup>
